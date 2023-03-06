@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D75E9B3-EABC-45F0-A03F-BF883B8C62CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicketMachine.Domain", "src\TrainTicketMachine.Domain\TrainTicketMachine.Domain.csproj", "{043985E1-3ACB-4EA4-844A-49A3CC72595D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicketMachine.Algorithms", "src\TrainTicketMachine.Algorithms\TrainTicketMachine.Algorithms.csproj", "{D58AE226-B373-4D1B-AD11-68CA8EB6157C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicketMachine.Repository", "src\TrainTicketMachine.Repository\TrainTicketMachine.Repository.csproj", "{064F36FD-C80F-4125-AF48-8FC2E9EC8559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicketMachine.Services", "src\TrainTicketMachine.Services\TrainTicketMachine.Services.csproj", "{C9D9111E-2DB9-41E7-912E-A4C614CBF5A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6C3814A8-EEC5-4A65-A237-050BA8927253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicketMachine.Tests", "tests\TrainTicketMachine.Tests\TrainTicketMachine.Tests.csproj", "{26567493-1A66-4D62-B4F6-5783A0BD96B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTicketMachine.WebApi", "src\TrainTicketMachine.WebApi\TrainTicketMachine.WebApi.csproj", "{4FE9246E-EBC9-48AF-8288-827653E1DAEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{043985E1-3ACB-4EA4-844A-49A3CC72595D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043985E1-3ACB-4EA4-844A-49A3CC72595D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043985E1-3ACB-4EA4-844A-49A3CC72595D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043985E1-3ACB-4EA4-844A-49A3CC72595D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58AE226-B373-4D1B-AD11-68CA8EB6157C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58AE226-B373-4D1B-AD11-68CA8EB6157C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58AE226-B373-4D1B-AD11-68CA8EB6157C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58AE226-B373-4D1B-AD11-68CA8EB6157C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064F36FD-C80F-4125-AF48-8FC2E9EC8559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064F36FD-C80F-4125-AF48-8FC2E9EC8559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064F36FD-C80F-4125-AF48-8FC2E9EC8559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064F36FD-C80F-4125-AF48-8FC2E9EC8559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D9111E-2DB9-41E7-912E-A4C614CBF5A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D9111E-2DB9-41E7-912E-A4C614CBF5A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D9111E-2DB9-41E7-912E-A4C614CBF5A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D9111E-2DB9-41E7-912E-A4C614CBF5A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26567493-1A66-4D62-B4F6-5783A0BD96B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26567493-1A66-4D62-B4F6-5783A0BD96B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26567493-1A66-4D62-B4F6-5783A0BD96B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26567493-1A66-4D62-B4F6-5783A0BD96B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE9246E-EBC9-48AF-8288-827653E1DAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE9246E-EBC9-48AF-8288-827653E1DAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE9246E-EBC9-48AF-8288-827653E1DAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE9246E-EBC9-48AF-8288-827653E1DAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{043985E1-3ACB-4EA4-844A-49A3CC72595D} = {3D75E9B3-EABC-45F0-A03F-BF883B8C62CD}
+		{D58AE226-B373-4D1B-AD11-68CA8EB6157C} = {3D75E9B3-EABC-45F0-A03F-BF883B8C62CD}
+		{064F36FD-C80F-4125-AF48-8FC2E9EC8559} = {3D75E9B3-EABC-45F0-A03F-BF883B8C62CD}
+		{C9D9111E-2DB9-41E7-912E-A4C614CBF5A2} = {3D75E9B3-EABC-45F0-A03F-BF883B8C62CD}
+		{26567493-1A66-4D62-B4F6-5783A0BD96B5} = {6C3814A8-EEC5-4A65-A237-050BA8927253}
+		{4FE9246E-EBC9-48AF-8288-827653E1DAEE} = {3D75E9B3-EABC-45F0-A03F-BF883B8C62CD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+### Find train stations by name
+GET http://{{baseUrl}}/api/v1/search?station=LIVERPOOL
+Accept: application/json

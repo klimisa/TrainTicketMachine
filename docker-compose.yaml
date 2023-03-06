@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=docker
+      - ASPNETCORE_URLS=http://*:5029
+    ports:
+      - "5029:5029"
+    networks:
+      - devnet
+
+networks:
+  devnet:
+    driver: bridge
