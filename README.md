@@ -15,7 +15,7 @@ For logging [Serilog](https://serilog.net/) has been used.
 There are two folders `src` where the functionality of the app exist and the
 `tests` folder where the tests exists.
 
-The projects structure is as follow:
+The structure is as follow:
 
 #### TrainTicketMachine.WebApi
 Everything is related to ASP.NET Core, here the minimal API is used to create
@@ -23,7 +23,7 @@ an HTTP api call for the search/find functionality.
 
 The API endpoint is: `api/v1/search?station=<station>` 
 
-There is an [http.api](http.api) file where the GET request lives in order to test the app,
+There is an [api.http](api.http) file where the GET request lives in order to test the app,
 either by running the project or via docker. There are two environments ready 
 to be used  for each case `development` and `docker`.
 
