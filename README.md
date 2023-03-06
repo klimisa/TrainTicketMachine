@@ -66,10 +66,10 @@ and the second method `Initialize` is to initialize the trie when the app starts
  which retrieves the train stations from whatever source we implement it with.
 In our case the implementation is an in-memory and exists `TrainTicketMachine.Repository` project. 
 
-The `TrainStationName` value object has a validation rule for the name
-of the train station that throw an appropriate customs exception. 
-In the case of an empty name it throws `TrainStationNameIsEmptyException`, and it
-used to restrict the `FindByTrainStationNameQueryRequest` receiving an empty name.
+The `TrainStationName` it's the other value object which has a validation rule for the name
+of the train station and inn the case of an empty name it throws an `TrainStationNameIsEmptyException`.
+It used to restrict the `FindByTrainStationNameQueryRequest` from receiving an empty name.
+
 #### TrainTicketMachine.Repository
 The implementation of the `ITrainStationRepository` is an in-memory list of train station names.
 
