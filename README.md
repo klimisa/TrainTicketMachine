@@ -60,15 +60,15 @@ The `ITrainStationLookup`  has two methods:
 the first methods takes a name and returns a tuple `((IList<string> stations, IList<char> nextChars))`
 and the second method `Initialize` is to initialize the trie when the app starts.
       
- #### TrainTicketMachine.Domain
- There is not really a true domain here, but just to give a bit of strictness 
- in our app there is a `TrainStation` value object used in the repository `ITrainStationRepository`
- which retrieves the train stations from whatever source we implement it with.
+#### TrainTicketMachine.Domain
+There is not really a true domain here, but just to give a bit of strictness 
+in our app there is a `TrainStation` value object used in the repository `ITrainStationRepository`
+which retrieves the train stations from whatever source we implement it with.
 In our case the implementation is an in-memory and exists `TrainTicketMachine.Repository` project. 
 
 The `TrainStationName` it's the other value object which has a validation rule for the name
-of the train station and inn the case of an empty name it throws an `TrainStationNameIsEmptyException`.
-It used to restrict the `FindByTrainStationNameQueryRequest` from receiving an empty name.
+of the train station and in the case of an empty name it throws an `TrainStationNameIsEmptyException`.
+It used to protect the `FindByTrainStationNameQueryRequest` from receiving an empty name.
 
 #### TrainTicketMachine.Repository
 The implementation of the `ITrainStationRepository` is an in-memory list of train station names.
