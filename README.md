@@ -37,7 +37,7 @@ In this project also the dependency injection is happening using the DI of ASP.N
        
 *Slow and unreliable connection*
 
-In order to mitigate the problem of slow and unreliable conncetion the trie 
+In order to mitigate the problem of slow and unreliable connection the trie 
 algorithm is feed with data on the application startup using the `TrainStationLookupInitializer` class
 which implements the `IHostedService`.
 
