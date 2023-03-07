@@ -7,8 +7,13 @@ public class TrainStationLookup : ITrainStationLookup
 {
     private readonly Trie trie = new();
 
-    public (IList<string> stations, IList<char> nextChars) LookFor(TrainStationName name)
-        => trie.Match(name.Value);
+    public LookupResult LookFor(TrainStationName name)
+    {
+        var (stations, nextChars) = trie.Match(name.Value);
+        return new LookupResult(stations, nextChars);
+    }
+
+
 
     public void Initialize(IEnumerable<TrainStation> trainStations)
     {
@@ -18,3 +23,5 @@ public class TrainStationLookup : ITrainStationLookup
         }
     }
 }
+
+public record LookupResult(IList<string> Stations, IList<char> NextChars);

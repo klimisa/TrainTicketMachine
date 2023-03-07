@@ -54,11 +54,11 @@ built. In our case the trie algorithm has been chosen.
 
 The `ITrainStationLookup`  has two methods:
 
-1. (IList<string> stations, IList<char> nextChars) LookFor(string name)
+1. LookupResult LookFor(string name)
 2. void Initialize(IEnumerable<TrainStation> trainStations)
 
-the first methods takes a name and returns a tuple `((IList<string> stations, IList<char> nextChars))`
-and the second method `Initialize` is to initialize the trie when the app starts.
+the first methods takes a name and returns a `LookupResult` and the second 
+method `Initialize` is to initialize the trie when the app starts.
       
 #### TrainTicketMachine.Domain
 There is not really a true domain here, but just to give a bit of strictness 

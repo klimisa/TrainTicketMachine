@@ -11,11 +11,11 @@ public class TrainStationQueryService : ITrainStationQueryService
 
     public ByTrainStationNameQueryResponse Handle(FindByTrainStationNameQueryRequest request)
     {
-        var (stations, nextChars) = trainStationLookup.LookFor(request.Name);
+        var lookupResult = trainStationLookup.LookFor(request.Name);
         return new ByTrainStationNameQueryResponse(
             request.Name.Value,
-            stations.ToArray(),
-            nextChars.ToArray()
+            lookupResult.Stations.ToArray(),
+            lookupResult.NextChars.ToArray()
         );
     }
 

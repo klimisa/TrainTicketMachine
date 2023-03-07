@@ -4,6 +4,6 @@ using Domain;
 
 public interface ITrainStationLookup
 {
-    (IList<string> stations, IList<char> nextChars) LookFor(TrainStationName name);
+    LookupResult LookFor(TrainStationName name);
     void Initialize(IEnumerable<TrainStation> trainStations);
 }
