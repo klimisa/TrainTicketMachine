@@ -14,10 +14,8 @@ public class TrainStationQueryService : ITrainStationQueryService
         var lookupResult = trainStationLookup.LookFor(request.Name);
         return new ByTrainStationNameQueryResponse(
             request.Name.Value,
-            lookupResult.Stations.ToArray(),
-            lookupResult.NextChars.ToArray()
+            lookupResult.Stations,
+            lookupResult.NextChars
         );
     }
-
-
 }

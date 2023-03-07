@@ -10,10 +10,11 @@ public class TrainStationLookup : ITrainStationLookup
     public LookupResult LookFor(TrainStationName name)
     {
         var (stations, nextChars) = trie.Match(name.Value);
-        return new LookupResult(stations, nextChars);
+        return new LookupResult(
+            stations.ToArray(),
+            nextChars.ToArray()
+        );
     }
-
-
 
     public void Initialize(IEnumerable<TrainStation> trainStations)
     {
@@ -24,4 +25,4 @@ public class TrainStationLookup : ITrainStationLookup
     }
 }
 
-public record LookupResult(IList<string> Stations, IList<char> NextChars);
+public record LookupResult(string[] Stations, char[] NextChars);
